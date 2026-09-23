@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <title>Kalkulyator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="calculator">
+    <input type="text" id="natija" disabled>
+    <div class="tugmalar">
+      <button onclick="tozala()" class="qizil">C</button>
+      <button onclick="ochir()" class="qizil">⌫</button>
+      <button onclick="qoshBelgi('%')" class="kulrang">%</button>
+      <button onclick="qoshBelgi('/')" class="orange">÷</button>
+
+      <button onclick="qoshBelgi('7')">7</button>
+      <button onclick="qoshBelgi('8')">8</button>
+      <button onclick="qoshBelgi('9')">9</button>
+      <button onclick="qoshBelgi('*')" class="orange">×</button>
+
+      <button onclick="qoshBelgi('4')">4</button>
+      <button onclick="qoshBelgi('5')">5</button>
+      <button onclick="qoshBelgi('6')">6</button>
+      <button onclick="qoshBelgi('-')" class="orange">−</button>
+
+      <button onclick="qoshBelgi('1')">1</button>
+      <button onclick="qoshBelgi('2')">2</button>
+      <button onclick="qoshBelgi('3')">3</button>
+      <button onclick="qoshBelgi('+')" class="orange">+</button>
+
+      <button onclick="qoshBelgi('0')" class="nol">0</button>
+      <button onclick="qoshBelgi('.')">.</button>
+      <button onclick="hisobla()" class="orange">=</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

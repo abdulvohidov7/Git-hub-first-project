@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #2c3e50, #4ca1af);
+}
+
+.calculator {
+  background: #1c1c1c;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+  width: 320px;
+}
+
+#natija {
+  width: 100%;
+  height: 70px;
+  font-size: 32px;
+  text-align: right;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  background: #0f0f0f;
+  color: white;
+}
+
+.tugmalar {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  height: 60px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #333;
+  color: white;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+.orange {
+  background: #ff9500;
+}
+
+.qizil {
+  background: #ff3b30;
+}
+
+.kulrang {
+  background: #a5a5a5;
+}
+
+.nol {
+  grid-column: span 2;
+}
+
+/* Mobil telefonlar uchun - kengroq va katta tugmalar */
+@media (max-width: 480px) {
+  body {
+    align-items: flex-start;
+    padding-top: 20px;
+  }
+
+  .calculator {
+    width: 95%;
+    max-width: none;
+    padding: 20px 15px;
+  }
+
+  #natija {
+    height: 80px;
+    font-size: 36px;
+  }
+
+  .tugmalar {
+    gap: 12px;
+  }
+
+  button {
+    height: 75px;
+    font-size: 26px;
+  }
+}
